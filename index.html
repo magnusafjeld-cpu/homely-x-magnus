@@ -172,37 +172,6 @@
   .note { flex: 1 1 260px; margin: 0; color: var(--muted); font-size: 0.975rem; }
   .yt { flex: none; font-size: 0.9375rem; font-weight: 600; white-space: nowrap; }
 
-  /* Bonus */
-  .bonus { padding: 0; }
-  .bonus summary {
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    padding: 18px 20px;
-    border-radius: var(--radius);
-    cursor: pointer;
-    list-style: none;
-    font-weight: 650;
-  }
-  .bonus summary::-webkit-details-marker { display: none; }
-  .bonus summary:hover .chev { background: var(--accent); color: #fff; }
-  .bonus summary small { display: block; margin-bottom: 2px; color: var(--accent); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
-  .chev {
-    flex: none;
-    display: grid; place-items: center;
-    width: 32px; height: 32px;
-    border-radius: 50%;
-    background: var(--accent-soft);
-    color: var(--accent);
-    transition: background-color 0.15s ease, color 0.15s ease;
-  }
-  .chev svg { width: 16px; height: 16px; }
-  .bonus[open] .chev svg { transform: rotate(180deg); }
-  .bonus-body { padding: 0 20px 20px; }
-  .bonus-body p { margin: 0 0 12px; }
-  .bonus-body ol { margin: 0 0 12px; padding-left: 1.3em; }
-  .bonus-body li { margin-bottom: 8px; padding-left: 2px; }
-  .bonus-body li::marker { color: var(--accent); font-weight: 700; }
-  .bonus-body > :last-child { margin-bottom: 0; }
-
   /* CV */
   .cv h2 { margin: 0 0 4px; font-size: 1.25rem; font-weight: 650; }
   .cv > p { margin: 0 0 16px; color: var(--muted); }
@@ -245,9 +214,6 @@
     main { gap: 28px; }
     .card { padding: 28px; }
     .card h2, .cv h2 { font-size: 1.375rem; }
-    .bonus { padding: 0; }
-    .bonus summary { padding: 22px 28px; }
-    .bonus-body { padding: 0 28px 28px; }
     .pdf { display: block; }
     .foot { padding: 48px 24px 80px; }
   }
@@ -326,24 +292,6 @@
     </div>
   </article>
 
-  <details class="card bonus">
-    <summary>
-      <span><small>Bonus</small>Slik ville jeg prioritert testene</span>
-      <span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg></span>
-    </summary>
-    <div class="bonus-body">
-      <p>Før en krone går til tester, ville jeg brukt noen uker på å finne ut hvor salget faktisk stopper opp.</p>
-      <ol>
-        <li><strong>Kartlegg trakten.</strong> Besøk, tilbud, kjøp og installasjon. Finn trinnet der flest faller fra.</li>
-        <li><strong>Snakk med folk.</strong> Kunder som kjøpte og kunder som lot være. Kundeservice og selgere vet ofte svaret før tallene viser det.</li>
-        <li><strong>Skriv hypoteser.</strong> Hver test får et suksesskriterium, en baseline og en fast lengde før den starter.</li>
-        <li><strong>Sjekk sporingen.</strong> Hvis tallene ikke stemmer, er testen bortkastet uansett hvor god ideen er.</li>
-        <li><strong>Prioriter og hold igjen.</strong> Ranger etter forventet effekt, hvor sikre vi er og hva det koster. Sett av en del av budsjettet til å skalere det som virker.</li>
-      </ol>
-      <p>Da går pengene til tester vi faktisk lærer noe av.</p>
-    </div>
-  </details>
-
   <section class="card cv" id="cv" aria-labelledby="cv-title">
     <h2 id="cv-title">CV</h2>
     <p>Én side, PDF.</p>
@@ -363,7 +311,6 @@
 
 <footer class="wrap foot">
   <p><a href="mailto:magnusafjeld@gmail.com">magnusafjeld@gmail.com</a></p>
-  <p>Laget på en kveld, siden fristen var kort.</p>
 </footer>
 
 <script>
