@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  =====================================================================
+  VIDEOER: nå ligger det 4K-demovideoer her som plassholdere.
+  Bytt dem ut når dine videoer ligger på YouTube (unlisted).
+  Bruk søk og erstatt på hele filen:
+
+    LXb3EKWsInQ   Spørsmål 1 (venner)       demo: Costa Rica 4K
+    njX2bu-_Vw4   Spørsmål 2 (problem)      demo: LG OLED 4K
+    aqz-KE-bpKQ   Spørsmål 3 (100 000 kr)   demo: Big Buck Bunny 4K
+
+  ID-en er delen etter "v=" i lenken:
+    https://www.youtube.com/watch?v=AbCdEfGhIjK   gir   AbCdEfGhIjK
+
+  Hver ID står fire steder (spiller, to bildekilder, reservelenke),
+  slik at alt virker også uten JavaScript.
+
+  TEKST UNDER VIDEOENE: søk etter "SKRIV:" og bytt ut linjene.
+  =====================================================================
+-->
+<title>Homely x Magnus</title>
+<meta name="description" content="Svarene mine på første screeningrunde: tre korte videoer og CV.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f6f5f1">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:title" content="Homely x Magnus">
+<meta property="og:description" content="Svarene mine på første screeningrunde: tre korte videoer og CV.">
+<meta property="og:url" content="https://magnusafjeld-cpu.github.io/homely-x-magnus/">
+<meta property="og:image" content="https://magnusafjeld-cpu.github.io/homely-x-magnus/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Homely x Magnus. Svar på første screeningrunde.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://i.ytimg.com">
+
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --surface: #ffffff;
+    --text: #1a1e1c;
+    --muted: #59615c;
+    --line: #e3e0d8;
+    --accent: #14614f;
+    --accent-strong: #0d4639;
+    --accent-soft: #e5efeb;
+    --radius: 16px;
+    color-scheme: light;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 400 1.0625rem/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
+
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+
+  /* Topp */
+  .intro { padding-top: 56px; padding-bottom: 36px; }
+
+  h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2.25rem, 10.2vw, 4.25rem);
+    font-weight: 750;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+  }
+  h1 .x { color: var(--accent); font-weight: 400; }
+  .nobr { white-space: nowrap; }
+
+  .lede { margin: 0 0 28px; font-size: 1.2rem; line-height: 1.45; }
+
+  .byline { display: flex; align-items: center; gap: 14px; margin: 0; }
+  .avatar {
+    flex: none;
+    display: grid; place-items: center;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.875rem; font-weight: 700; letter-spacing: 0.02em;
+  }
+  .byline p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: var(--muted); }
+  .byline strong { color: var(--text); font-weight: 600; }
+
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; padding: 0; list-style: none; }
+  .meta li {
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+  .meta a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+
+  /* Kort */
+  main { display: grid; gap: 20px; padding-bottom: 20px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+
+  .num {
+    margin: 0 0 6px;
+    color: var(--accent);
+    font-size: 0.8125rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+
+  .card h2 { margin: 0 0 16px; font-size: 1.25rem; font-weight: 650; line-height: 1.35; letter-spacing: -0.01em; }
+
+  .player {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 0;
+    border-radius: 10px;
+    background: #1f2724;
+  }
+  .player img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .play {
+    position: absolute; top: 50%; left: 50%;
+    display: grid; place-items: center;
+    width: 68px; height: 68px;
+    margin: -34px 0 0 -34px;
+    border-radius: 50%;
+    background: rgba(18, 24, 22, 0.72);
+    color: #fff;
+    transition: background-color 0.15s ease;
+  }
+  .play svg { width: 28px; height: 28px; margin-left: 4px; fill: currentColor; }
+  a.player:hover .play, a.player:focus-visible .play { background: var(--accent); }
+  a.player:focus-visible { outline-offset: 4px; }
+
+  .card-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 20px; margin-top: 14px; }
+  .note { flex: 1 1 260px; margin: 0; color: var(--muted); font-size: 0.975rem; }
+  .yt { flex: none; font-size: 0.9375rem; font-weight: 600; white-space: nowrap; }
+
+  /* Bonus */
+  .bonus { padding: 0; }
+  .bonus summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 18px 20px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    list-style: none;
+    font-weight: 650;
+  }
+  .bonus summary::-webkit-details-marker { display: none; }
+  .bonus summary:hover .chev { background: var(--accent); color: #fff; }
+  .bonus summary small { display: block; margin-bottom: 2px; color: var(--accent); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .chev {
+    flex: none;
+    display: grid; place-items: center;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  .chev svg { width: 16px; height: 16px; }
+  .bonus[open] .chev svg { transform: rotate(180deg); }
+  .bonus-body { padding: 0 20px 20px; }
+  .bonus-body p { margin: 0 0 12px; }
+  .bonus-body ol { margin: 0 0 12px; padding-left: 1.3em; }
+  .bonus-body li { margin-bottom: 8px; padding-left: 2px; }
+  .bonus-body li::marker { color: var(--accent); font-weight: 700; }
+  .bonus-body > :last-child { margin-bottom: 0; }
+
+  /* CV */
+  .cv h2 { margin: 0 0 4px; font-size: 1.25rem; font-weight: 650; }
+  .cv > p { margin: 0 0 16px; color: var(--muted); }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 46px;
+    padding: 10px 18px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1rem; font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+  }
+  .btn:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: #fff; }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-ghost { background: transparent; color: var(--accent); }
+  .btn-ghost:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-strong); }
+  .pdf {
+    display: none;
+    width: 100%;
+    aspect-ratio: 612 / 800;
+    margin-top: 20px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  /* Footer */
+  .foot { padding: 36px 20px 56px; color: var(--muted); font-size: 0.95rem; }
+  .foot p { margin: 0 0 4px; }
+  .foot a { font-weight: 600; }
+
+  @media (min-width: 720px) {
+    .wrap { padding: 0 24px; }
+    .intro { padding-top: 96px; padding-bottom: 48px; }
+    .lede { font-size: 1.3rem; }
+    main { gap: 28px; }
+    .card { padding: 28px; }
+    .card h2, .cv h2 { font-size: 1.375rem; }
+    .bonus { padding: 0; }
+    .bonus summary { padding: 22px 28px; }
+    .bonus-body { padding: 0 28px 28px; }
+    .pdf { display: block; }
+    .foot { padding: 48px 24px 80px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap intro">
+  <h1>Homely <span class="nobr"><span class="x">x</span> Magnus</span></h1>
+  <p class="lede">Her er svarene mine på første screeningrunde.</p>
+  <div class="byline">
+    <span class="avatar" aria-hidden="true">MF</span>
+    <p><strong>Magnus Fjeld</strong><br>NHH · Business Development Intern 2027</p>
+  </div>
+  <ul class="meta">
+    <li>3 videoer</li>
+    <li>Under ett minutt hver</li>
+    <li><a href="#cv">CV nederst</a></li>
+  </ul>
+</header>
+
+<main class="wrap">
+
+  <article class="card" aria-labelledby="q1">
+    <p class="num">Spørsmål 1</p>
+    <h2 id="q1">Hvordan ville dine venner beskrevet deg som person?</h2>
+    <a class="player" href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Video 1: Hvordan ville dine venner beskrevet deg som person?">
+      <picture>
+        <source srcset="https://i.ytimg.com/vi_webp/LXb3EKWsInQ/hqdefault.webp" type="image/webp">
+        <img src="https://i.ytimg.com/vi/LXb3EKWsInQ/hqdefault.jpg" alt="" width="480" height="360" fetchpriority="high">
+      </picture>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+      <span class="sr-only">Spill av video 1</span>
+    </a>
+    <div class="card-foot">
+      <p class="note">SKRIV: én kort linje om svaret.</p>
+      <a class="yt" href="https://www.youtube.com/watch?v=LXb3EKWsInQ" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 1</span> <span aria-hidden="true">↗</span></a>
+    </div>
+  </article>
+
+  <article class="card" aria-labelledby="q2">
+    <p class="num">Spørsmål 2</p>
+    <h2 id="q2">Fortell en historie hvor du løste et problem du ikke visste hvordan du skulle løse.</h2>
+    <a class="player" href="https://www.youtube.com/watch?v=njX2bu-_Vw4" data-title="Video 2: Et problem jeg ikke visste hvordan jeg skulle løse">
+      <picture>
+        <source srcset="https://i.ytimg.com/vi_webp/njX2bu-_Vw4/hqdefault.webp" type="image/webp">
+        <img src="https://i.ytimg.com/vi/njX2bu-_Vw4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
+      </picture>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+      <span class="sr-only">Spill av video 2</span>
+    </a>
+    <div class="card-foot">
+      <p class="note">SKRIV: én kort linje om svaret.</p>
+      <a class="yt" href="https://www.youtube.com/watch?v=njX2bu-_Vw4" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 2</span> <span aria-hidden="true">↗</span></a>
+    </div>
+  </article>
+
+  <article class="card" aria-labelledby="q3">
+    <p class="num">Spørsmål 3</p>
+    <h2 id="q3">Hvis du fikk 100&nbsp;000&nbsp;kr til tester for å øke salgstakten, hva ville du gjort før testene?</h2>
+    <a class="player" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" data-title="Video 3: Hva jeg ville gjort før testene">
+      <picture>
+        <source srcset="https://i.ytimg.com/vi_webp/aqz-KE-bpKQ/hqdefault.webp" type="image/webp">
+        <img src="https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
+      </picture>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+      <span class="sr-only">Spill av video 3</span>
+    </a>
+    <div class="card-foot">
+      <p class="note">SKRIV: én kort linje om svaret.</p>
+      <a class="yt" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 3</span> <span aria-hidden="true">↗</span></a>
+    </div>
+  </article>
+
+  <details class="card bonus">
+    <summary>
+      <span><small>Bonus</small>Slik ville jeg prioritert testene</span>
+      <span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg></span>
+    </summary>
+    <div class="bonus-body">
+      <p>Før en krone går til tester, ville jeg brukt noen uker på å finne ut hvor salget faktisk stopper opp.</p>
+      <ol>
+        <li><strong>Kartlegg trakten.</strong> Besøk, tilbud, kjøp og installasjon. Finn trinnet der flest faller fra.</li>
+        <li><strong>Snakk med folk.</strong> Kunder som kjøpte og kunder som lot være. Kundeservice og selgere vet ofte svaret før tallene viser det.</li>
+        <li><strong>Skriv hypoteser.</strong> Hver test får et suksesskriterium, en baseline og en fast lengde før den starter.</li>
+        <li><strong>Sjekk sporingen.</strong> Hvis tallene ikke stemmer, er testen bortkastet uansett hvor god ideen er.</li>
+        <li><strong>Prioriter og hold igjen.</strong> Ranger etter forventet effekt, hvor sikre vi er og hva det koster. Sett av en del av budsjettet til å skalere det som virker.</li>
+      </ol>
+      <p>Da går pengene til tester vi faktisk lærer noe av.</p>
+    </div>
+  </details>
+
+  <section class="card cv" id="cv" aria-labelledby="cv-title">
+    <h2 id="cv-title">CV</h2>
+    <p>Én side, PDF.</p>
+    <div class="actions">
+      <a class="btn" href="Magnus_Fjeld_CV.pdf" download="Magnus_Fjeld_CV.pdf">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 17h12"/></svg>
+        Last ned CV
+      </a>
+      <a class="btn btn-ghost" href="Magnus_Fjeld_CV.pdf" target="_blank" rel="noopener">Åpne i ny fane</a>
+    </div>
+    <object class="pdf" data="Magnus_Fjeld_CV.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" type="application/pdf" aria-label="CV for Magnus Fjeld">
+      <p>Nettleseren viser ikke PDF her. Bruk knappene over.</p>
+    </object>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p><a href="mailto:magnusafjeld@gmail.com">magnusafjeld@gmail.com</a></p>
+  <p>Laget på en kveld, siden fristen var kort.</p>
+</footer>
+
+<script>
+  // Last YouTube-spilleren først ved klikk, så siden holder seg rask.
+  // Uten JavaScript går lenken rett til YouTube.
+  document.querySelectorAll('a.player').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      var id = new URL(link.href).searchParams.get('v');
+      if (!id) return;
+      event.preventDefault();
+      var frame = document.createElement('iframe');
+      frame.className = 'player';
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&playsinline=1';
+      frame.title = link.dataset.title;
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      link.replaceWith(frame);
+      frame.focus();
+    });
+  });
+</script>
+</body>
+</html>
