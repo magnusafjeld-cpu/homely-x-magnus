@@ -123,7 +123,7 @@
   .meta a:hover { text-decoration: underline; }
 
   /* Kort */
-  main { display: grid; gap: 20px; padding-bottom: 20px; }
+  main { display: grid; gap: 20px; padding-bottom: 56px; }
 
   .card {
     background: var(--surface);
@@ -170,8 +170,7 @@
   .yt { flex: none; font-size: 0.9375rem; font-weight: 600; white-space: nowrap; }
 
   /* CV */
-  .cv h2 { margin: 0 0 4px; font-size: 1.25rem; font-weight: 650; }
-  .cv > p { margin: 0 0 16px; color: var(--muted); }
+  .cv h2 { margin: 0 0 16px; font-size: 1.25rem; font-weight: 650; }
   .actions { display: flex; flex-wrap: wrap; gap: 10px; }
   .btn {
     display: inline-flex; align-items: center; gap: 8px;
@@ -199,20 +198,14 @@
     background: #fff;
   }
 
-  /* Footer */
-  .foot { padding: 36px 20px 56px; color: var(--muted); font-size: 0.95rem; }
-  .foot p { margin: 0 0 4px; }
-  .foot a { font-weight: 600; }
-
   @media (min-width: 720px) {
     .wrap { padding: 0 24px; }
     .intro { padding-top: 96px; padding-bottom: 48px; }
     .lede { font-size: 1.3rem; }
-    main { gap: 28px; }
+    main { gap: 28px; padding-bottom: 80px; }
     .card { padding: 28px; }
     .card h2, .cv h2 { font-size: 1.375rem; }
     .pdf { display: block; }
-    .foot { padding: 48px 24px 80px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -288,7 +281,6 @@
 
   <section class="card cv" id="cv" aria-labelledby="cv-title">
     <h2 id="cv-title">CV</h2>
-    <p>Én side, PDF.</p>
     <div class="actions">
       <a class="btn" href="Magnus_Fjeld_CV.pdf" download="Magnus_Fjeld_CV.pdf">
         <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 17h12"/></svg>
@@ -302,10 +294,6 @@
   </section>
 
 </main>
-
-<footer class="wrap foot">
-  <p><a href="mailto:magnusafjeld@gmail.com">magnusafjeld@gmail.com</a></p>
-</footer>
 
 <script>
   // Last YouTube-spilleren først ved klikk, så siden holder seg rask.
