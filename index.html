@@ -5,13 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--
   =====================================================================
-  VIDEOER: nå ligger det 4K-demovideoer her som plassholdere.
-  Bytt dem ut når dine videoer ligger på YouTube (unlisted).
-  Bruk søk og erstatt på hele filen:
+  VIDEOER (unlisted på YouTube). For å bytte en video,
+  bruk søk og erstatt på hele filen:
 
-    LXb3EKWsInQ   Spørsmål 1 (venner)       demo: Costa Rica 4K
-    njX2bu-_Vw4   Spørsmål 2 (problem)      demo: LG OLED 4K
-    aqz-KE-bpKQ   Spørsmål 3 (100 000 kr)   demo: Big Buck Bunny 4K
+    1UQ6uo_l-PI   Spørsmål 1 (venner)
+    D4Blc-4C91k   Spørsmål 2 (problem)
+    zu7ygFhjSO8   Spørsmål 3 (100 000 kr)
 
   ID-en er delen etter "v=" i lenken:
     https://www.youtube.com/watch?v=AbCdEfGhIjK   gir   AbCdEfGhIjK
@@ -153,16 +152,16 @@
   }
   .player img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .play {
-    position: absolute; top: 50%; left: 50%;
-    display: grid; place-items: center;
-    width: 68px; height: 68px;
-    margin: -34px 0 0 -34px;
-    border-radius: 50%;
-    background: rgba(18, 24, 22, 0.72);
+    position: absolute; top: 10px; right: 10px;
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 14px 7px 11px;
+    border-radius: 999px;
+    background: rgba(18, 24, 22, 0.78);
     color: #fff;
+    font-size: 0.8125rem; font-weight: 600; line-height: 1;
     transition: background-color 0.15s ease;
   }
-  .play svg { width: 28px; height: 28px; margin-left: 4px; fill: currentColor; }
+  .play svg { width: 14px; height: 14px; fill: currentColor; }
   a.player:hover .play, a.player:focus-visible .play { background: var(--accent); }
   a.player:focus-visible { outline-offset: 4px; }
 
@@ -205,6 +204,7 @@
     .lede { font-size: 1.3rem; }
     main { gap: 28px; padding-bottom: 80px; }
     .card { padding: 28px; }
+    .play { top: 16px; right: 16px; padding: 9px 16px 9px 13px; font-size: 0.875rem; }
     .card h2, .cv h2 { font-size: 1.375rem; }
     .pdf-slot { display: block; }
   }
@@ -235,48 +235,48 @@
   <article class="card" aria-labelledby="q1">
     <p class="num">Spørsmål 1</p>
     <h2 id="q1">Hvordan ville dine venner beskrevet deg som person?</h2>
-    <a class="player" href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Video 1: Hvordan ville dine venner beskrevet deg som person?">
+    <a class="player" href="https://www.youtube.com/watch?v=1UQ6uo_l-PI" data-title="Video 1: Hvordan ville dine venner beskrevet deg som person?">
       <picture>
-        <source srcset="https://i.ytimg.com/vi_webp/LXb3EKWsInQ/hqdefault.webp" type="image/webp">
-        <img src="https://i.ytimg.com/vi/LXb3EKWsInQ/hqdefault.jpg" alt="" width="480" height="360" fetchpriority="high">
+        <source srcset="https://i.ytimg.com/vi_webp/1UQ6uo_l-PI/hqdefault.webp" type="image/webp">
+        <img src="https://i.ytimg.com/vi/1UQ6uo_l-PI/hqdefault.jpg" alt="" width="480" height="360" fetchpriority="high">
       </picture>
-      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg>Spill av</span>
       <span class="sr-only">Spill av video 1</span>
     </a>
     <div class="card-foot">
-      <a class="yt" href="https://www.youtube.com/watch?v=LXb3EKWsInQ" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 1</span> <span aria-hidden="true">↗</span></a>
+      <a class="yt" href="https://www.youtube.com/watch?v=1UQ6uo_l-PI" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 1</span> <span aria-hidden="true">↗</span></a>
     </div>
   </article>
 
   <article class="card" aria-labelledby="q2">
     <p class="num">Spørsmål 2</p>
     <h2 id="q2">Fortell en historie hvor du løste et problem du ikke visste hvordan du skulle løse.</h2>
-    <a class="player" href="https://www.youtube.com/watch?v=njX2bu-_Vw4" data-title="Video 2: Et problem jeg ikke visste hvordan jeg skulle løse">
+    <a class="player" href="https://www.youtube.com/watch?v=D4Blc-4C91k" data-title="Video 2: Et problem jeg ikke visste hvordan jeg skulle løse">
       <picture>
-        <source srcset="https://i.ytimg.com/vi_webp/njX2bu-_Vw4/hqdefault.webp" type="image/webp">
-        <img src="https://i.ytimg.com/vi/njX2bu-_Vw4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
+        <source srcset="https://i.ytimg.com/vi_webp/D4Blc-4C91k/hqdefault.webp" type="image/webp">
+        <img src="https://i.ytimg.com/vi/D4Blc-4C91k/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
       </picture>
-      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg>Spill av</span>
       <span class="sr-only">Spill av video 2</span>
     </a>
     <div class="card-foot">
-      <a class="yt" href="https://www.youtube.com/watch?v=njX2bu-_Vw4" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 2</span> <span aria-hidden="true">↗</span></a>
+      <a class="yt" href="https://www.youtube.com/watch?v=D4Blc-4C91k" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 2</span> <span aria-hidden="true">↗</span></a>
     </div>
   </article>
 
   <article class="card" aria-labelledby="q3">
     <p class="num">Spørsmål 3</p>
     <h2 id="q3">Hvis du fikk 100&nbsp;000&nbsp;kr til tester for å øke salgstakten, hva ville du gjort før testene?</h2>
-    <a class="player" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" data-title="Video 3: Hva jeg ville gjort før testene">
+    <a class="player" href="https://www.youtube.com/watch?v=zu7ygFhjSO8" data-title="Video 3: Hva jeg ville gjort før testene">
       <picture>
-        <source srcset="https://i.ytimg.com/vi_webp/aqz-KE-bpKQ/hqdefault.webp" type="image/webp">
-        <img src="https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
+        <source srcset="https://i.ytimg.com/vi_webp/zu7ygFhjSO8/hqdefault.webp" type="image/webp">
+        <img src="https://i.ytimg.com/vi/zu7ygFhjSO8/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
       </picture>
-      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg>Spill av</span>
       <span class="sr-only">Spill av video 3</span>
     </a>
     <div class="card-foot">
-      <a class="yt" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 3</span> <span aria-hidden="true">↗</span></a>
+      <a class="yt" href="https://www.youtube.com/watch?v=zu7ygFhjSO8" target="_blank" rel="noopener">Åpne på YouTube<span class="sr-only">: video 3</span> <span aria-hidden="true">↗</span></a>
     </div>
   </article>
 
